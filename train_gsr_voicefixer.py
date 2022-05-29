@@ -23,7 +23,7 @@ if (not torch.cuda.is_available()):
 
 hp, parser = tools.utils.get_hparams()
 
-assert hp["data"]["sampling_rate"] == 16000
+assert hp["data"]["sampling_rate"] == 44100
 hp["root"]=git_root
 
 for k in hp["data"]["train_dataset"].keys():
